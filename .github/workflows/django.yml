@@ -40,5 +40,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        cd myblog
+        cd ablog
         python manage.py test
