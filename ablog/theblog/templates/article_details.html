@@ -5,12 +5,12 @@
 
 <hi>{{ post.title }}</hi>
 <small> By: 
-    {{ post.author.first_name }} {{ post.author.last_name}} {{post.post.date}} -
+    {{ post.author.first_name }} {{ post.author.last_name}} -
     
     {% if user.is_authenticated %}   
         
         -<a href="{% url 'update_post' post.pk %}">(Edit)</a> 
-        <a href="{% url 'delate_post' post.pk %}">(Delete)</a> 
+        <a href="{% url 'delete_post' post.pk %}">(Delete)</a> 
     {% endif %}    
 
 </small><br/>
