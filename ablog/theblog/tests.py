@@ -25,5 +25,5 @@ class SimpleTest(TestCase):
         )
         self.assertEqual(response.status_code, 302)
         response = self.client.get("/")
-        print(response.content)
+        #print(response.content)
         self.assertTrue("XXX TITLE XXX" in str(response.content))
